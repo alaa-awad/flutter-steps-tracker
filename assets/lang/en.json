@@ -1,0 +1,52 @@
+{
+
+  "App_name": "My Steps",
+
+  "_comment LogIn": "all text in page LogIn",
+  "LogIn_title" : "Log In",
+  "LogIn_title1" : "Welcome Back!",
+  "LogIn_email_controller_validate_isEmpty" : "please enter your email address",
+  "LogIn_email_textFiled_hint" : "Email",
+  "LogIn_password_controller_validate_isEmpty" : "please enter your password ",
+  "LogIn_password_controller_validate_isWeek" : "Your password is week ,you Should use al least 6 character",
+  "LogIn_password_textFiled_hint" : "Password",
+  "LogIn_button_text" : "Log In",
+  "LogIn_text_register" : "Don't have an account ?",
+  "LogIn_text_button_register" : "SIGN UP",
+  "LogIn_text_or" : " or ",
+  "LogIn_text_or2" : " Sing up with ",
+
+  "_comment add user": "all text in Sign up screen",
+  "Add_user_title" : "Sign Up",
+  "Add_user_title1" : "Add User",
+  "add_user_password_controller_validate_isWeek" : "your password is week ,please enter at least 5 characters",
+  "Add_user_label_name" : "Name",
+  "Add_user_validate_name" : "please enter yor name",
+  "Add_user_label_email" : "Email",
+  "Add_user_validate_email" : "please enter your email",
+  "Add_user_label_password" : "password",
+  "Add_user_validate_password" : "please enter your password",
+  "Add_user_label_confirmPassword" : "Confirm password",
+  "Add_user_validate_confirmPassword" : "please Confirm your password",
+  "Add_user_text_button" : "Sing Up",
+  "Add_user_text_register" : "You have an account ?",
+  "Add_user_text_button_register" : "SIGN IN",
+  "Add_user_showToast_error" : "confirm password not equal password",
+
+  "PersonalInformation_text_steps_number": "The number of steps ",
+  "PersonalInformation_text_health_point": "Your health points",
+
+  "RewardPage_appBar_text": "Reward Page",
+  "RewardPage_List_id_1_text": "A cup of coffee from Starbucks",
+  "RewardPage_List_id_2_text": "10% discount voucher from Nike agency",
+  "RewardPage_List_id_3_text": "Meal for two at Manaqeesh Al Hamra Restaurant",
+  "RewardPage_health_point": "health points : ",
+  "RewardPage_showDialog_title_text": "Would you like to redeem your health catch for this reward",
+  "RewardPage_showDialog_error_title_text": "You don't have enough health point",
+  "RewardPage_showDialog_success_title_text": "You have reward",
+
+  "HistoryPage_appBar_text": "History Page",
+  "WalkPage_appBar_text": "Walk Page"
+
+
+}

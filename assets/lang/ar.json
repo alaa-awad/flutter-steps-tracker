@@ -1,0 +1,49 @@
+{
+
+  "App_name": "خطواتي",
+
+  "_comment LogIn": "all text in page LogIn",
+  "LogIn1_title": "أهلا بعودتك !",
+  "LogIn_title": "تسجيل الدخول",
+  "LogIn_email_controller_validate_isEmpty": "الرجاء ادخال ايميلك",
+  "LogIn_email_textFiled_hint": "الايميل",
+  "LogIn_password_controller_validate_isEmpty": "الرجاء ادخال كلمة السر",
+  "LogIn_password_textFiled_hint": "كلمة السر",
+  "LogIn_button_text": "تسجيل الدخول",
+  "LogIn_text_register": "لا تمتلك حساب ؟",
+  "LogIn_text_button_register": "اشتراك",
+  "LogIn_text_or": " أو ",
+  "LogIn_text_or2": " عبر الأشتراك ب ",
+
+  "_comment add user": "all text in Sign up screen",
+  "Add_user_title": "اشتراك",
+  "Add_user_title1": "إضافة مستخدم",
+  "add_user_password_controller_validate_isWeek": " كلمة السر الخاصة بك ضعيفة يجي ادخال خمس احرف على الاقل",
+  "Add_user_label_name": "لاسم",
+  "Add_user_validate_name": "الرجاء ادخال الاسم",
+  "Add_user_label_email": "الايميل",
+  "Add_user_validate_email": "الرجاء ادخال الايميل",
+  "Add_user_label_password": "كلمة سر",
+  "Add_user_validate_password": "الرجاء ادخال كلمة السر",
+  "Add_user_label_confirmPassword": "أكد كلمة السر",
+  "Add_user_validate_confirmPassword": "الرجاء أعد كتابة كلمة السر",
+  "Add_user_text_button": "التسجيل",
+  "Add_user_text_register": " تمتلك حساب ؟",
+  "Add_user_text_button_register": "تسجيل",
+  "Add_user_showToast_error": " كلمة السر وتأكيده غير متشابهين",
+
+  "PersonalInformation_text_steps_number": "عدد الخطوات ",
+  "PersonalInformation_text_health_point": "نقاط الصحه الخاصة بك ",
+
+  "RewardPage_appBar_text": "صفحة المكافئات",
+  "RewardPage_List_id_1_text": "كوب قهوة من ستاربكس",
+  "RewardPage_List_id_2_text": "قسيمة خصم 10% من وكالة نايك",
+  "RewardPage_List_id_3_text": "وجبة طعام مجانيه لشخصين في مطعم مناقيش الحمرى",
+  "RewardPage_showDialog_title_text": "هل ترغب باستبدال نقاط الصحه بهذه الجائزة",
+  "RewardPage_showDialog_error_title_text": "ليس لديك نقطة صحه كافيه",
+  "RewardPage_showDialog_success_title_text": "لقد حصلت على الجائزة",
+  "RewardPage_health_point": "نقاط الصحه : ",
+
+  "HistoryPage_appBar_text": "صفحة التواريخ",
+  "WalkPage_appBar_text": "صفحة المشي"
+}
