@@ -46,7 +46,15 @@
   "RewardPage_showDialog_success_title_text": "You have reward",
 
   "HistoryPage_appBar_text": "History Page",
-  "WalkPage_appBar_text": "Walk Page"
+  "WalkPage_appBar_text": "Walk Page",
 
-
+  "SettingPage_appBar_text": "Setting Page",
+  "SettingPage_language_text": "Change Language",
+  "SettingPage_theme_text": "Change Theme",
+  "Setting_screen_button_language_title":"Choose language",
+  "Setting_screen_button_language_default":"Default",
+  "Setting_screen_button_language_button":"Select",
+  "Setting_screen_button_theme_title":"Choose theme",
+  "Setting_screen_button_theme_lightTheme":"Light Theme",
+  "Setting_screen_button_theme_darkTheme":"Dark Theme"
 }

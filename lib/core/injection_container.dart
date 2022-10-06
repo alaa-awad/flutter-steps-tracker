@@ -14,7 +14,6 @@ import '../features/auth/data/datasources/user_local_data_source.dart';
 import '../features/auth/data/datasources/user_remote_data_source.dart';
 import '../features/auth/data/repositories/user_repository_impl.dart';
 import '../features/auth/domain/repositories/user_repository.dart';
-import '../features/auth/domain/usecases/log_in_usecase.dart';
 import '../features/auth/domain/usecases/sign_up_usecase.dart';
 import '../features/auth/presentation/cubit/user_cubit.dart';
 import '../features/steps_tracker/data/datasources/local_database.dart';
@@ -30,7 +29,7 @@ Future<void> init() async {
 // Bloc
 
   // cubit user
-  sl.registerFactory(() => UserCubit(logIn: sl(), signUp: sl(), logOut: sl()));
+  sl.registerFactory(() => UserCubit(signUp: sl(), logOut: sl()));
 
   // cubit Steps tracker
   sl.registerFactory(() => StepsTrackerCubit(
@@ -43,7 +42,6 @@ Future<void> init() async {
 
   // UseCase user
   sl.registerLazySingleton(() => SignUpUseCase(sl()));
-  sl.registerLazySingleton(() => LogInUseCase(sl()));
   sl.registerLazySingleton(() => LogOutUseCase(sl()));
 
   // UseCase steps trackers

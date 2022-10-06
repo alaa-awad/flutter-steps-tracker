@@ -5,8 +5,8 @@ import 'package:flutter_steps_tracker/core/routing/navigate_to.dart';
 import 'package:flutter_steps_tracker/features/steps_tracker/presentation/cubit/steps_tracker_cubit.dart';
 import 'package:flutter_steps_tracker/features/steps_tracker/presentation/pages/history_page.dart';
 import 'package:flutter_steps_tracker/features/steps_tracker/presentation/pages/reward_page.dart';
+import 'package:flutter_steps_tracker/features/steps_tracker/presentation/pages/setting_page.dart';
 import 'package:flutter_steps_tracker/features/steps_tracker/presentation/pages/walk_screen.dart';
-
 import '../widgets/home_page/personal_information.dart';
 
 class HomePage extends StatelessWidget {
@@ -19,6 +19,9 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(getTranslated(context, "App_name")),
         centerTitle: true,
+        leading: IconButton(onPressed: (){
+          navigateTo(context, SettingPage());
+        },icon: const Icon(Icons.settings),),
       ),
       body: BlocConsumer<StepsTrackerCubit,StepsTrackerState>(
         listener: (context,state){},

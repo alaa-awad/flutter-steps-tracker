@@ -8,9 +8,10 @@ import 'core/cache_helper/cache_helper.dart';
 import 'core/localization/app_local.dart';
 import 'core/injection_container.dart' as di;
 import 'core/themes/app_theme.dart';
+import 'core/var.dart';
 import 'core/widgets/decision_home_screen.dart';
 
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await di.init();
   await CacheHelper.init();
@@ -52,10 +53,11 @@ class MyApp extends StatelessWidget {
           }
           return supportedLocale.first;
         },
-        locale: const Locale("en", ''),
+        locale:
+            language != null ? Locale("$language", '') : const Locale("en", ""),
         debugShowCheckedModeBanner: false,
-        theme: lightTheme,
-         home:home,
+        theme: theme == null || theme == "lightTheme" ? lightTheme : darkTheme,
+        home: home,
       ),
     );
   }

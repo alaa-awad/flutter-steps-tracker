@@ -2,12 +2,16 @@ import 'package:bloc/bloc.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:equatable/equatable.dart';
 import 'package:firebase_database/firebase_database.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_steps_tracker/core/strings/app_string.dart';
 import 'package:flutter_steps_tracker/core/var.dart';
 import 'package:flutter_steps_tracker/features/steps_tracker/domain/entities/history.dart';
 
+import '../../../../core/cache_helper/cache_helper.dart';
+import '../../../../core/routing/navigate_and_finish.dart';
 import '../../../../core/strings/map_failure_to_message.dart';
+import '../../../../main.dart';
 import '../../../auth/data/models/user_model.dart';
 import '../../../auth/domain/entities/user.dart';
 import '../../domain/usecases/add_data_tracker_usecase.dart';
@@ -73,6 +77,17 @@ class StepsTrackerCubit extends Cubit<StepsTrackerState> {
     failureOrDoneMessage.fold(
             (failure) => emit(GetHistoryErrorState(mapFailureToMessage(failure))),
             (r) => emit(GetHistorySuccessState()));
+  }
+
+
+  void changeLanguage(String value, BuildContext context) {
+    CacheHelper.sharedPreferences.setString('language', value);
+    navigateAndFinish(context, const MyApp());
+  }
+
+  void changeTheme(String value, BuildContext context) {
+    CacheHelper.sharedPreferences.setString('theme', value);
+    navigateAndFinish(context, const MyApp());
   }
 
 }

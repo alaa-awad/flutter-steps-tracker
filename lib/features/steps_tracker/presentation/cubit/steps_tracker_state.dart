@@ -25,6 +25,9 @@ class UpdateUserErrorState extends StepsTrackerState {
   const UpdateUserErrorState(this.error);
 }
 
+class ChangeLanguageState extends StepsTrackerState {}
+class ChangeThemeState extends StepsTrackerState {}
+
 class AddHistoryLoadingState extends StepsTrackerState {}
 class AddHistorySuccessState extends StepsTrackerState {}
 class AddHistoryErrorState extends StepsTrackerState {

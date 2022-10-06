@@ -4,14 +4,12 @@ import 'package:flutter_steps_tracker/features/steps_tracker/presentation/cubit/
 import '../../../../core/localization/get_os.dart';
 import '../../../../core/localization/get_translate.dart';
 import '../../../../core/routing/navigate_and_finish.dart';
-import '../../../../core/routing/navigate_to.dart';
 import '../../../../core/widgets/adaptive/adaptive_button.dart';
 import '../../../../core/widgets/adaptive/adaptive_indicator.dart';
 import '../../../../core/widgets/adaptive/adaptive_text_field.dart';
 import '../../../../core/widgets/show_toast.dart';
 import '../../../steps_tracker/presentation/pages/home_page.dart';
 import '../cubit/user_cubit.dart';
-import 'login_screen.dart';
 import '../../../../core/injection_container.dart' as di;
 
 class RegisterScreen extends StatelessWidget {
@@ -57,15 +55,6 @@ class RegisterScreen extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            /* Text(
-                              getTranslated(context, 'Add_user_title'),
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .headline4!
-                                  .copyWith(
-                                    color: Colors.black,
-                                  ),
-                            ),*/
                             SizedBox(
                               height: MediaQuery.of(context).size.height * 0.5,
                               child: const Image(
