@@ -12,7 +12,7 @@ void decisionHomeScreen() {
   language = CacheHelper.getData(key: 'language');
   theme = CacheHelper.getData(key: 'theme');
   if (AppString.userToken != null) {
-    home = const HomePage();
+    home =  HomePage();
   } else {
     home = RegisterScreen();
   }

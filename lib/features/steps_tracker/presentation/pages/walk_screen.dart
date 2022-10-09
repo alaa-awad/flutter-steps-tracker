@@ -4,6 +4,7 @@ import 'package:flutter_steps_tracker/core/routing/navigate_to.dart';
 import 'package:flutter_steps_tracker/features/steps_tracker/domain/entities/history.dart';
 import 'package:flutter_steps_tracker/features/steps_tracker/presentation/cubit/steps_tracker_cubit.dart';
 import 'package:flutter_steps_tracker/features/steps_tracker/presentation/pages/home_page.dart';
+import 'package:hexcolor/hexcolor.dart';
 import 'package:pedometer/pedometer.dart';
 import '../../../../core/functions/format_date.dart';
 import '../../../../core/localization/get_translate.dart';
@@ -96,29 +97,29 @@ class _WalkScreenState extends State<WalkScreen> {
         title: Text(getTranslated(context, "WalkPage_appBar_text")),
         centerTitle: true,
         leading: IconButton(icon: const Icon(Icons.arrow_back_ios),onPressed: (){
-          navigateAndFinish(context, const HomePage());
+          navigateAndFinish(context, HomePage());
         },),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
+             Text(
               'Steps taken:',
-              style: TextStyle(fontSize: 30),
+              style: Theme.of(context).textTheme.bodyText1?.copyWith(fontSize: 30),
             ),
             Text(
               _steps,
-              style: const TextStyle(fontSize: 60),
+              style: Theme.of(context).textTheme.bodyText1?.copyWith(fontSize: 60),
             ),
-            const Divider(
+             Divider(
               height: 100,
               thickness: 0,
-              color: Colors.white,
+              color: theme =="lightTheme"||theme == null ?Colors.white : HexColor("#121212"),
             ),
-            const Text(
+             Text(
               'Pedestrian status:',
-              style: TextStyle(fontSize: 30),
+              style: Theme.of(context).textTheme.bodyText1?.copyWith(fontSize: 30),
             ),
             Icon(
               _status == 'walking'
@@ -127,12 +128,13 @@ class _WalkScreenState extends State<WalkScreen> {
                       ? Icons.accessibility_new
                       : Icons.error,
               size: 100,
+              color: theme =="lightTheme"||theme == null ?HexColor("#121212"):Colors.white,
             ),
             Center(
               child: Text(
                 _status,
                 style: _status == 'walking' || _status == 'stopped'
-                    ? const TextStyle(fontSize: 30)
+                    ? Theme.of(context).textTheme.bodyText1?.copyWith(fontSize: 60)
                     : const TextStyle(fontSize: 20, color: Colors.red),
               ),
             ),

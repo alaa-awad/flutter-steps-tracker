@@ -70,17 +70,19 @@ class AdaptiveTextField extends StatelessWidget {
         validator: validate,
         decoration: InputDecoration(
           labelText: label,
-          prefixIcon: prefix != null ? Icon(prefix) : null,
+          prefixIcon: prefix != null ? Icon(prefix,color: Theme.of(context).iconTheme.color,) : null,
           suffixIcon: suffix != null
               ? IconButton(
                   onPressed: suffixPressed,
                   icon: Icon(
                     suffix,
+                    color: Theme.of(context).iconTheme.color,
                   ),
                 )
               : null,
           border: inputBorder,
           hintText: hintText,
+          labelStyle: Theme.of(context).textTheme.subtitle1,
         ),
       );
     }
@@ -91,7 +93,7 @@ class AdaptiveTextField extends StatelessWidget {
       prefix: prefix != null
           ? Icon(
               prefix,
-              color: defaultColor,
+              color: primaryColorLight,
             )
           : null,
       /*  suffix:suffix != null ? IconButton(

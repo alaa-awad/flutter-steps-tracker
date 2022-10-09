@@ -17,7 +17,7 @@ class AdaptiveButton extends StatelessWidget {
   AdaptiveButton({
     Key? key,
     required this.os,
-    this.background = defaultColor,
+    this.background = primaryColorLight,
     this.width = double.infinity,
     this.height = 50,
     this.isUpperCase = true,
@@ -43,9 +43,7 @@ class AdaptiveButton extends StatelessWidget {
             child: Text(
               isUpperCase ? text.toUpperCase() : text,
               // isUpperCase ? text.toUpperCase() : text,
-              style: const TextStyle(
-                color: Colors.white,
-              ),
+              style: Theme.of(context).textTheme.subtitle2,
             ),
           ),
         ),

@@ -107,7 +107,7 @@ class _DialogContainLanguageState extends State<DialogContainLanguage> {
             child: Text(
               getTranslated(
                   context, 'Setting_screen_button_language_button'),
-              style: Theme.of(context).textTheme.headline6,
+              style: Theme.of(context).textTheme.bodyText1?.copyWith(fontSize: 20),
             ),
           ),
         ],

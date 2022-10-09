@@ -5,14 +5,9 @@ import 'package:flutter_steps_tracker/core/var.dart';
 class PersonalInformation extends StatelessWidget {
    PersonalInformation({Key? key}) : super(key: key);
 
-  TextStyle textStyle = const TextStyle(
-    fontSize: 20,
-    fontWeight: FontWeight.bold
-
-  );
-
   @override
   Widget build(BuildContext context) {
+    TextStyle textStyle = Theme.of(context).textTheme.bodyText1!;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [

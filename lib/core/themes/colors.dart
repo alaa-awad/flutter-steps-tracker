@@ -1,12 +1,23 @@
-//const defaultColor = Colors.teal;
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
-//Color primaryColor = HexColor("#F7ECDE");
-Color primaryColor = Colors.black38;
-//Color secondaryColor = HexColor("#9ED2C6");
-Color secondaryColor = Colors.black38;
-const defaultColor = Colors.teal;
+const primaryColorLight = Colors.black38;
+const primaryColorDark = Colors.white;
 
-const kTextColor = Color(0xFF3C4046);
-const kBackgroundColor = Color(0xFFF9F8FD);
+const secondaryColorLight = Colors.black38;
+const secondaryColorDark = Colors.white;
+
+Color onPrimaryColorLight = HexColor("#000000");
+Color onPrimaryColorDark = HexColor("#FFFFFF");
+
+Color onSecondaryColorLight = HexColor("#000000");
+Color onSecondaryColorDark = HexColor("#FFFFFF");
+
+Color backgroundLight = HexColor('#FFFFFF');
+Color backgroundDark = HexColor('#121212');
+
+Color surfaceLight = HexColor('#FFFFFF');
+Color surfaceDark = HexColor('#262626');
+
+Color textColorLight = HexColor('#000000');
+Color textColorDark = HexColor('#FFFFFF');

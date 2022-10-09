@@ -2,6 +2,7 @@ import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_steps_tracker/core/routing/navigate_and_finish.dart';
 import '../../../../core/strings/map_failure_to_message.dart';
 import '../../domain/usecases/log_out_usecase.dart';
 import '../../domain/usecases/sign_up_usecase.dart';

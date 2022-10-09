@@ -56,5 +56,6 @@
   "Setting_screen_button_language_button":"Select",
   "Setting_screen_button_theme_title":"Choose theme",
   "Setting_screen_button_theme_lightTheme":"Light Theme",
-  "Setting_screen_button_theme_darkTheme":"Dark Theme"
+  "Setting_screen_button_theme_darkTheme":"Dark Theme",
+  "SettingPage_button_logOut": "Log Out"
 }

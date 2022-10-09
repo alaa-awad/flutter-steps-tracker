@@ -1,8 +1,6 @@
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_steps_tracker/features/steps_tracker/presentation/cubit/steps_tracker_cubit.dart';
-import 'package:flutter_steps_tracker/features/steps_tracker/presentation/cubit/steps_tracker_cubit.dart';
-
 import '../../../../../core/localization/get_translate.dart';
 import '../../../../../core/var.dart';
 import '../../../../../core/widgets/my_divider.dart';
@@ -38,7 +36,7 @@ class _DialogContainThemeState extends State<DialogContainTheme> {
     return Column(
       children: [
         Text(getTranslated(context, 'Setting_screen_button_theme_title'),
-            style: Theme.of(context).textTheme.subtitle1),
+            style: Theme.of(context).textTheme.bodyText1?.copyWith(fontSize: 17)),
         const SizedBox(height: 10),
         SizedBox(
           width: 80,
@@ -78,7 +76,7 @@ class _DialogContainThemeState extends State<DialogContainTheme> {
           },
           child: Text(
             getTranslated(context, 'Setting_screen_button_language_button'),
-            style: Theme.of(context).textTheme.headline6,
+            style: Theme.of(context).textTheme.bodyText1?.copyWith(fontSize: 20),
           ),
         ),
       ],

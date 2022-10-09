@@ -25,11 +25,12 @@
 
   "SettingPage_appBar_text": "صفحة الاعدادات",
   "SettingPage_language_text": "تغيير اللغة",
-  "SettingPage_theme_text": "تغيير اللغة",
+  "SettingPage_theme_text": "تغيير الثيم",
   "Setting_screen_button_language_title":"أختر لغة",
   "Setting_screen_button_language_default":"الافتراضي",
   "Setting_screen_button_language_button":"أختر",
   "Setting_screen_button_theme_title":"أختر ثيم",
   "Setting_screen_button_theme_lightTheme":"مظهر خفيف",
-  "Setting_screen_button_theme_darkTheme":"مظهر داكن"
+  "Setting_screen_button_theme_darkTheme":"مظهر داكن",
+  "SettingPage_button_logOut": "تسجيل الخروج"
 }

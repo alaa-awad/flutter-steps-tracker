@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_steps_tracker/features/auth/presentation/cubit/user_cubit.dart';
 import 'package:flutter_steps_tracker/features/steps_tracker/presentation/cubit/steps_tracker_cubit.dart';
 import 'core/bloc_observer.dart';
 import 'core/cache_helper/cache_helper.dart';
@@ -27,8 +28,15 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (BuildContext context) => di.sl<StepsTrackerCubit>(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (BuildContext context) => di.sl<StepsTrackerCubit>(),
+        ),
+        BlocProvider(
+          create: (BuildContext context) => di.sl<UserCubit>(),
+        ),
+      ],
       child: MaterialApp(
         title: 'Flutter Demo',
         supportedLocales: const [

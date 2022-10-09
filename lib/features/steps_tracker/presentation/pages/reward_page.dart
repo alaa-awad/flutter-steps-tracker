@@ -3,6 +3,7 @@ import 'package:flutter_steps_tracker/core/localization/get_translate.dart';
 import 'package:flutter_steps_tracker/features/steps_tracker/domain/entities/history.dart';
 import 'package:flutter_steps_tracker/features/steps_tracker/presentation/cubit/steps_tracker_cubit.dart';
 import 'package:flutter_steps_tracker/features/steps_tracker/presentation/widgets/reward_page/show_dialog.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 import '../../../../core/functions/format_date.dart';
 import '../../../../core/var.dart';
@@ -46,8 +47,8 @@ class RewardPage extends StatelessWidget {
   Widget rewardItem(Reward reward, BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10.0),
-      child: Container(
-          height: 100,
+      child: SizedBox(
+          height: 120,
           width: double.infinity,
           child: Card(
             child: Row(
@@ -64,14 +65,16 @@ class RewardPage extends StatelessWidget {
                       Text(
                         reward.name,
                         maxLines: 2,
+                        style: Theme.of(context).textTheme.bodyText1,
                       ),
                       Row(
                         children: [
                           Text(getTranslated(
-                              context, "RewardPage_health_point")),
+                              context, "RewardPage_health_point"),style: Theme.of(context).textTheme.bodyText1,),
                           Text(
                             reward.healthPoints.toString(),
                             maxLines: 2,
+                            style: Theme.of(context).textTheme.bodyText1,
                           ),
                         ],
                       )
@@ -111,7 +114,8 @@ class RewardPage extends StatelessWidget {
                             }
                           });
                     },
-                    icon: const Icon(Icons.add_circle_outline_outlined)),
+                    icon: const Icon(Icons.add_circle_outline_outlined),
+                  color:theme == null || theme == "lightTheme" ?HexColor("#121212"):Colors.white),
               ],
             ),
           )),

@@ -16,7 +16,7 @@ class HistoryPage extends StatelessWidget {
       (builder: (context,state){
         return  Scaffold(
           appBar: AppBar(
-            title: Text(getTranslated(context, "HistoryPage_appBar_text")),
+            title: Text(getTranslated(context, "HistoryPage_appBar_text"),style: Theme.of(context).textTheme.bodyText1,),
             centerTitle: true,
           ),
           body: ListView.separated(
@@ -32,8 +32,8 @@ class HistoryPage extends StatelessWidget {
   Widget rewardItem(History history, BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10.0),
-      child: Container(
-          height:90,
+      child: SizedBox(
+          height:120,
           width: double.infinity,
           child: Card(
             child: Padding(
@@ -45,10 +45,12 @@ class HistoryPage extends StatelessWidget {
                   Text(
                     history.dateTime,
                     maxLines: 2,
+                    style: Theme.of(context).textTheme.bodyText1,
                   ),
                   Text(
                     history.type,
                     maxLines: 2,
+                    style: Theme.of(context).textTheme.subtitle1,
                   ),
                 ],
               ),
